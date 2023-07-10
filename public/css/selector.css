@@ -1,0 +1,117 @@
+html {
+  max-width: 720px;
+}
+
+/* body {
+  background: #fff;
+} */
+
+/* :root {
+  background: red;
+} */
+
+/* #user
+.user {
+  color: blue;
+}
+
+h2 {
+  color: green;
+}
+
+section > h1 {
+  color: rgb(188, 11, 161);
+} */
+
+/* .user-last {
+  color: crimson;
+} */
+
+/* h2 ~ button {
+  color: chartreuse;
+} */
+
+/* li:first-child,
+li:last-child {
+  color: tomato;
+} */
+
+/* .test:first-child {
+  color: green;
+} */
+
+/* .item:first-of-type {
+color: blue;
+} */
+
+/* .item:nth-of-type(2n) {
+  color: darkred;
+} */
+
+/* p:not(.items) {
+  color: fuchsia;
+} */
+
+.card-dark {
+  background: rgb(210, 208, 208);
+}
+
+/* .input-dark {
+  background: rgb(85, 83, 83);
+} */
+
+/* .img-card[alt~="with"] {
+  height: 400px;
+} */
+
+/* button[class*="sdgtr1sfsdf"] {
+  color: blue;
+} */
+
+/* .big-t::before {
+  content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, neque sint praesentium eaque';
+} */
+
+/* .card:hover {
+  background: red;
+} */
+
+.test2:link {
+  color: rgb(55, 255, 0);
+}
+
+.card:active {
+  background: red;
+}
+
+.card:focus-within {
+  background: red;
+}
+
+/* input:read-write {
+  background: rebeccapurple;
+} */
+
+button:enabled {
+  background-color: green;
+}
+
+button:disabled {
+  background-color: red;
+}
+
+input[type="checkbox"]:checked ~ span {
+  background: rgb(2, 204, 255);
+}
+
+.valid:invalid {
+  color: rgb(170, 0, 255);
+}
+
+.qwe:out-of-range {
+  background: firebrick;
+}
+
+.qwe:in-range {
+  background: rgb(0, 255, 34);
+}

@@ -1,7 +1,75 @@
-html {
-  max-width: 720px;
+.card p {
+    color: rgba(223, 32, 0, 1);
+    -webkit-text-stroke: 0.5px blue;
 }
 
-body {
-  background: #fff;
+p:hover {
+    color: chartreuse;
+    direction: ltr;
+}
+
+h2 {
+    text-align: left justify;
+} */
+
+p {
+    letter-spacing: 20px;
+    text-decoration: overline dotted red ;
+}
+
+h2 {
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    text-align: center;
+    /* -webkit-text-stroke: 0.03em; */
+    /* -webkit-text-fill-color: aqua; */
+}
+
+* {
+    font-weight: 900px;
+}
+
+h3 {
+    /* font-family: fantasy; */
+    /* font-size: large; */
+    /* font-weight: lighter; */
+    /* background-color: color-mix(#234234, #556780); */
+    /* text-rendering: optimizeLegibility; */
+    /* text-emphasis-style: dot; */
+    /* text-emphasis-position: under right; */
+    /* writing-mode: vertical-lr; */
+    /* text-emphasis-style: open; */
+    /* letter-spacing: 1em; */
+    /* unicode-bidi: normal; */
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+    text-align-last: left;
+    font-kerning: auto;
+    font-variant-numeric: stacked-fractions;
+    font-variant-caps: titling-caps;
+    font-synthesis: style;
+}
+
+/* .tabsize {
+    text-orientation: upright;
+
+} */
+
+.ret {
+    accent-color: red;
+}
+
+.tre {
+    background-color: blueviolet; 
+    height: 200px;
+    
+}
+
+.block {
+    display: block;
+    margin: 58px;
+    padding: -20px;
+    background-color: aqua;
+    /* width: 39%; */
+    max-height: 20px;
 }
