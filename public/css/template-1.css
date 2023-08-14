@@ -145,3 +145,61 @@ margin-bottom: 12px;
     font-size: 19px;
     padding: 9px;
 }
+
+body {
+    background: blue;
+    /* all: initial; */
+}
+
+.page {
+    background-image: url("/img/test_img.jpg");
+    /* mix-blend-mode: luminosity; */
+    /* background-blend-mode: lighten; */
+    /* all: initial; */
+    /* background-repeat: repeat-x */
+    /* background: rgb(30, 255, 0); */
+    /* linear-gradient: (45deg, top left, #f8cdd4 0%, #f1a7c8 50%, #e86f9e 100%); */
+    /* background-image: radial-gradient(50% 50.00% at 50% 50.00%, #B9B1EB 0%, rgba(197, 204, 238, 0.00) 88.02%); */
+
+}
+
+.hero_text {
+    /* background-image: url(/img/test_img.jpg); */
+    background-attachment: fixed;
+    line-height: 200%;
+    /* border: 10px solid red; */
+    border-image-source: url(/img/test_img.jpg);
+    border-image-width: 15% 15%;
+    border-image-slice: 43% 20%;
+
+}
+
+.card_block {
+    clip-path: circle(20%);
+    /* list-style-type: upper-roman; */
+    list-style-image: linear-gradient(
+        to bottom left,
+        blue,
+        red
+        );
+}
+
+.card_descriptions_item {
+    display: list-item;
+}
+
+/* .table tr {
+    border: 1px solid black;
+} */
+
+.table tr td {
+    border: 1px solid rgb(201, 12, 12);
+}
+
+.table {
+    table-layout: auto;
+    width: 10px;
+    border-collapse: unset;
+    border-spacing: 5px 25px;
+    empty-cells: hide;
+}
