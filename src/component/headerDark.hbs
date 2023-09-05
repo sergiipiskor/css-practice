@@ -1,0 +1,21 @@
+<div class="header_first">
+    {{#with header}}
+    {{> logo}}
+    {{/with}}
+    <nav class="header_nav">
+        <div class="header_nav_right">
+            {{#with header}}
+            {{> nav}}
+            {{/with}}
+        </div>
+    </nav>
+</div>
+<div class="header_second">
+    {{#with header}}
+    <p><span class="logo_ad">Ad</span>
+        {{ad.text}}:
+        <a href="{{ad.url}}">{{ad.url}}</a>
+    </p>
+    <p><span>User online: </span>{{userOnline}}</p>
+    {{/with}}
+</div>
