@@ -334,10 +334,16 @@ body {
     background-color: var(--color-white);
     display: grid;
     gap: var(--spacing-3);
-
+    border: 1px solid transparent;
     font-size: var(--size-2);
-
+    transition: opacity var(--transition-1);
     grid-template-rows: max-content max-content 1fr max-content;
+}
+
+.feat_card:hover {
+    background-color: rgba(83, 209, 240, 0.259);
+    opacity: var(--opacity-1);
+    border-color: rgb(230, 0, 0);
 }
 
 .feat_link {
@@ -481,5 +487,4 @@ body {
 .footer_section {
     display: flex;
 }
-
 }
