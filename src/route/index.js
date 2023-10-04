@@ -21,6 +21,21 @@ router.get('/', function (req, res) {
 // router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/slack', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('slack', {
+    layout: null,
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
+
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/selector', function (req, res) {
   // res.render генерує нам HTML сторінку
 
@@ -765,6 +780,18 @@ router.get('/template-5', function (req, res) {
     },
 
     advantages: [
+      {
+        title: '24/7 Availability',
+        text: 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the.',
+      },
+      {
+        title: '10 Years of Expertise',
+        text: 'Fill out all required fields using real data on the checkout page.',
+      },
+      {
+        title: 'Loyalty Program',
+        text: 'While you were paying, we had already prepared access to our Member Area, where you can read more about the status of your order.',
+      },
       {
         title: '24/7 Availability',
         text: 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the.',

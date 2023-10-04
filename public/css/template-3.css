@@ -1,3 +1,19 @@
+@import url(../css/var.css);
+
+@font-face {
+    font-family: 'Segment';
+    src: url(../font/Segment-Regular.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Segment';
+    src: url(../font/Segment-SemiBold.otf);
+    font-weight: 900;
+}
+
+@layer normal, main, first, secondary;
+
 @keyframes fly {
     from {
         top: 0;
@@ -21,31 +37,6 @@
         left: 0;
         background-color: purple;
     }
-}
-
-:root {
-    --space-m: 12px;
-    --space-xm: 16px;
-    --space-l: 24px;
-    --space-b: 36px;
-
-    --size-s: 14px;
-    --size-d: 16px;
-    --size-l: 20px;
-
-    --color-border: #DEE2E6;
-    --color-primary: #382ef6;
-    --color_white: #fff;
-    --color-title: #212529;
-    --color-text: #343A40;
-
-    --border-radius: 12px;
-
-    --waight-title: 500;
-    --waight-text: 400;
-
-    --page-width: 960px;
-    scroll-behavior: smooth;
 }
 
 /* =========================================== */
@@ -270,25 +261,29 @@
     color: var(--color-text);
 }
 
-.button {
-    display: inline-block;
-    font-size: var(--size-d);
-    text-decoration: none;
-    padding: var(--space-m) var(--space-xm);
-    border-radius: calc(var(--border-radius) / 3);
-/*         
-    transition-property: opacity;
-    transition-duration: 1s; */
+@layer first {
+    .button {
+        display: inline-block;
+        font-size: var(--size-d);
+        text-decoration: none;
+        padding: var(--space-m) var(--space-xm);
+        border-radius: calc(var(--border-radius) / 3);
+    /*         
+        transition-property: opacity;
+        transition-duration: 1s; */
 
-    transition-property: opacity, background-color;
-    transition-duration: 1s, 3s;
-    transition-delay: 3s;
-    transform: rotate(45deg);
+        transition-property: opacity, background-color;
+        transition-duration: 1s, 3s;
+        transition-delay: 3s;
+        transform: rotate(45deg);
+    }
 }
 
-.card_button {
-    color: var(--color_white);
-    background-color: var(--color-primary);   
+@layer main {
+    .card_button {
+        color: var(--color_white);
+        background-color: var(--color-primary);   
+    }
 }
 
 .button:hover {
@@ -329,16 +324,17 @@
     color: var(--color_white);
 }
 
-.form_button {
-    /* font-size: var(--size-l); */
-    background-color: var(--color_white);
-    /* padding: var(--space-m) var(--space-b); */
-    width: 100%;
-    max-width: 160px;
-    color: var(--color-text);
-    /* border-radius: calc(var(--border-radius) / 2); */
+@layer secondary {
+    .form_button {
+        /* font-size: var(--size-l); */
+        background-color: var(--color-primary);
+        /* padding: var(--space-m) var(--space-b); */
+        width: 100%;
+        max-width: 160px;
+        color: var(--color-text);
+        /* border-radius: calc(var(--border-radius) / 2); */
+    }
 }
-
 .hero_slider_icon {
     background: var(--color-primary);
     width: 30px;
@@ -370,4 +366,70 @@
 
 .hero_slider_right {
     right: var(--space-l);
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* 
+@media all and (min-width: 601px) and (max-width: 800px) {
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (width <= 600px) {
+    .blog {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.form {
+    gap: var(--space-l);
+}
+
+@media all and (max-width: 550px) {
+    .form {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .form_button {
+        transform: none;
+    }
+
+    .form_info,
+    .form_title {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media all and (color: monochrome) {
+    .form {
+    align-items: center;
+    }
+} */
+
+@media all and (width < 860px) {
+    .hero {
+        flex-direction: column;
+    }
+}
+
+/* .hero_container {
+    container-type: inline-size;
+    container-name: hero;
+}
+
+@container hero (width < 860px) {
+    .hero {
+    flex-direction: column;
+    }
+} */
+
+.hero_title {
+    font-size: 5cqw;
 }
